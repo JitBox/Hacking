@@ -1,0 +1,10 @@
+Host Discovery:
+- Ping sweep bash script:
+    - for i in {1..254}; do (ping -c 1 192.168.29.$i | grep "bytes from" &); done
+- NMAP ping sweep
+    - nmap -sn 192.168.29.1-255 | grep report
+- arp-scan
+    - arp-scan -l
+- netdiscover
+    - netdiscover -r 192.168.29.0/24
+
