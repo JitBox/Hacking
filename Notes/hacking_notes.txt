@@ -8,3 +8,15 @@ Host Discovery:
 - netdiscover
     - netdiscover -r 192.168.29.0/24
 
+http enum:
+visit page / page sourec
+nikto -h <IP>
+dirb
+dirbuster
+
+SMB Enum
+list shares:
+- smbclient -L <\\IP ADDR>
+
+access shares:
+- smbclient \\IP ADDR\\<share>
